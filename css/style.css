@@ -18,16 +18,30 @@ a{
     color: aliceblue;
 }
 
-header nav{
+
+header{
     position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease; 
+    
+}
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    height: 10vh;
+}
+header nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 24px;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.212);
-    height: 8vh;
-    
 }
 .name{
     font-size: 35px;
@@ -141,7 +155,9 @@ h2 span{
 #home div:nth-child(3){
     margin-top: 35px;
 }
-
+#about{
+    height: 100vh;
+}
 @media (min-width: 1024px){
     .navigation{
         list-style: none;
