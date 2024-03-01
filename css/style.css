@@ -21,7 +21,7 @@ a{
 header nav{
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     padding-top: 24px;
     align-items: center;
