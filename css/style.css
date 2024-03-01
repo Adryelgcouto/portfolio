@@ -2,6 +2,17 @@ body{
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #970000;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --p-small-font: 0.9rem;
+}
 a{
     text-decoration: none;
     color: aliceblue;
@@ -101,12 +112,12 @@ header nav{
 }
 h1{
     font-weight: bold;
-    font-size: 4rem;
+    font-size: var(--big-font);
     text-align: center;
     padding-bottom: 8px ;
 }
 h2{
-    font-size: 2rem;
+    font-size: var(--h2-font);
     text-align: center;
 }
 h2 span{
@@ -149,10 +160,5 @@ h2 span{
     .mobile-menu{
         display: none;
     }
-    h1{
-        font-size: 5rem;
-    }
-    h2{
-        font-size: 3.75rem;
-    }
+
 }
