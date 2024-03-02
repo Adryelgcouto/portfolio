@@ -163,7 +163,68 @@ h2 span{
     margin-top: 35px;
 }
 #about{
+   display: flex;
+   background: var(--bg-color);
+   color: white;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.picture{
+    display: none;
+}
+.picture img{
+    width: 430px;
+    border-radius: 50px;
+    box-shadow: 0 0 2px 2px rgba(255, 0, 0, 0.8), 0 0 2px 2px rgba(255, 0, 0, 0.6), 0 0 10px 0px rgb(255, 0, 0);
+    
+}
+.history{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+#about h3{
+    font-size: var(--big-font);
+}
+#about h3 > span{
+    color: red;
+}
+#about p{
+    font-size: var(--p-font);
+    width: 50vw;
+}
+#about p:nth-child(1){
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+#about p:nth-child(2){
+    text-align: left;
+}
+.contato{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+}
+.contato div{
+    background-color: red;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.contato div:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.contato i {
+    font-size: 40px;
 }
 @media (min-width: 1024px){
     nav{
@@ -191,6 +252,16 @@ h2 span{
     }
     .mobile-menu{
         display: none;
+    }
+    #about p{
+        width: 600px;
+    }
+    .contato{
+        width: 600px;
+        justify-content: left;
+    }
+    .picture{
+        display: initial;
     }
 
 }
