@@ -194,11 +194,11 @@ h2 span{
     color: red;
 }
 #about p{
-    font-size: var(--p-small-font);
+    font-size: var(--p-font);
     width: 50vw;
 }
 #about p{
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 #about p:nth-child(2){
