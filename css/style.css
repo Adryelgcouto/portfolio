@@ -188,18 +188,17 @@ h2 span{
     
 }
 #about h3{
-    font-size: var(--big-font);
+    font-size: var(--h2-font);
 }
 #about h3 > span{
     color: red;
 }
 #about p{
-    font-size: var(--p-font);
+    font-size: var(--p-small-font);
     width: 50vw;
 }
-#about p:nth-child(1){
+#about p{
     text-align: center;
-    color: red;
     margin-bottom: 20px;
 }
 #about p:nth-child(2){
@@ -255,6 +254,11 @@ h2 span{
     }
     #about p{
         width: 600px;
+        text-align: left;
+
+    }
+    .history{
+        align-items: initial;
     }
     .contato{
         width: 600px;
